@@ -6,9 +6,7 @@ Note:
 - Instructions on how to compile and run programs + general explanation are in README.md
 - Part 3 explanation is in another file called part3.md
 
-## Experiment 1: Without any faults, compare the performance of the basic version of Ivy protocol
-and the new fault tolerant version using requests from at least 10 clients. You should assume
-at least three replicas for the central manager.
+## Experiment 1: Without any faults, compare the performance of the basic version of Ivy protocol and the new fault tolerant version using requests from at least 10 clients. You should assume at least three replicas for the central manager.
 - Both versions are run with the following test operations in sequential order:
 	1. Each node i reads from page i
 	2. Each node i writes to page i
