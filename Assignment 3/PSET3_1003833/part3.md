@@ -8,7 +8,7 @@ Note:
 
 ## Q: Argue whether your design still preserves sequential consistency (a short paragraph will suffice).
 - Yes, my fault tolerant design of Ivy still preserves sequential consistency
-- The shared memory portion follows sequential consistency
+- The shared memory portion follows sequential consistency <br />
 	&rightarrow; Almost exacly the same as the example in class
 - The election portion's operations may not exactly be sequential, but does not affect the consistency of the shared memory portion
 	--> There could be concurrent operations especially when messages are broadcasted
