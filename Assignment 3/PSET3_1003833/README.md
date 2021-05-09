@@ -55,7 +55,7 @@ Note:
 
 Note that the implementation for fault tolerance is as such:
 - If the CM fails in between operations then there is no fault tolerance issue and the newly elected replica has the correct metadata
-- If the CM fails before it sends READFORWARD/WRITEFORWARD/READNOOWNER/WRITENOOWNER, then the processor who requested the operation should timeout and redo the read/write operation. No changes have been made to the metadata yet so no problem (TODO)
+- If the CM fails before it sends READFORWARD/WRITEFORWARD/READNOOWNER/WRITENOOWNER, then the processor who requested the operation should timeout and redo the read/write operation. No changes have been made to the metadata yet so no problem
 - If the CM fails after it sends READFORWARD/WRITEFORWARD/READNOOWNER/WRITENOOWNER, then the recipient processor will receive the message and continue with the operation. The metadata should be updated on ALL replica so there should not be a fault tolerance issue when the CM position is passed over to the newly elected replica. The newly elected replica will also receive a READCONFIRM/WRITECONFIRM msg but this does not affect anything
 
 
