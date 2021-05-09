@@ -35,10 +35,7 @@ at least three replicas for the central manager.
 - The timings for the fault tolerant version are longer than that of the normal version because the fault tolerant version has to run elections for the Central Manager at least once
 
 
-## Experiment 2: Evaluate the new design in the presence of faults. Specifically, you can simulate
-two scenarios a) when the primary CM fails at a random time, and b) when the primary CM
-restarts after the failure. Compare the performance of these two cases with the equivalent
-scenarios without any CM faults.
+## Experiment 2: Evaluate the new design in the presence of faults. Specifically, you can simulate two scenarios a) when the primary CM fails at a random time, and b) when the primary CM restarts after the failure. Compare the performance of these two cases with the equivalent scenarios without any CM faults.
 - Code is written in the main function of fault_tolerant_ivy.go
 - Simulation for both scenarios work as intended and shown in printed output when the program is run
 
