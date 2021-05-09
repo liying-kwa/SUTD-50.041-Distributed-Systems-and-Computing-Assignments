@@ -16,7 +16,7 @@ Note:
 - The shared memory leading to election portion follows sequential consistency <br />
 	&rightarrow; In the middle of a read/write operation, if the processor realises that the Central Manager is not responding, it sends messages to all other CM replicas to tell them to start an election
 - The election leading to shared memory portion also follows sequential consistency <br />
-	&rightarrow; While there is no assigned central manager yet, the processor (in the middle of a read/write operation) busy waits with one-second intervals
+	&rightarrow; While there is no assigned central manager yet, the processor (in the middle of a read/write operation) busy waits with one-second intervals <br />
 	&rightarrow; When the election ends and every processor is given the pointer to the central manager, the busy-waiting processor continues its read/write operation
 
 
