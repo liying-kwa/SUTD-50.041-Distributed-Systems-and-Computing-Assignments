@@ -14,3 +14,4 @@ Q3: Centralised Server Protocol <br />
 ## Assignment 3: Consistency Models
 Q1: Ivy architecture discussed in class <br />
 Q2: Fault tolerant version of Ivy architecture <br />
+Note: I did not implement a queue for read/write requests, which is supposed to be the case as taught in class. <br />
